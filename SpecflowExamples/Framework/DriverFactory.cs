@@ -17,7 +17,7 @@ namespace SpecflowExamples.Framework
         [ThreadStatic]
         public static RemoteWebDriver? driver;
        
-        public static string remote_url_chrome = "http://localhost:4444/wd/hub";
+        public static string remote_url_chrome = "http://127.0.0.1:4444/wd/hub";
         
         public static void InIt(string Browsername)
         {
