@@ -25,6 +25,6 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: start selenium grid
-      run: -compose -f "docker-compose.yml" down
+      run: docker-compose -f "docker-compose.yaml" down
     - name: Test
       run: dotnet test --no-build --verbosity normal
